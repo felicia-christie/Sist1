@@ -42,9 +42,11 @@ public class Sis1 {
 	    Connector.Send(name);
 	    
 	    Menu.display();
+	    System.out.println(Connector.Retrieve().toString());
+	    
 	    System.out.print("Input choice : ");
 	    int C = Menu.getChoice();
-	
+	    
 	    while (C != 3){
 		if (C == 1 || C == 2){
 		    if (C == 1){
