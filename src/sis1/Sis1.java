@@ -42,7 +42,7 @@ public class Sis1 {
 	    Connector.Send(name);
 	    
 	    Menu.display();
-	    System.out.println(Connector.Retrieve().toString());
+	    //System.out.println(Connector.Retrieve().toString());
 	    
 	    System.out.print("Input choice : ");
 	    int C = Menu.getChoice();
@@ -93,7 +93,7 @@ public class Sis1 {
 		else {
 		    System.out.print("Wrong choice, please re-input : ");
 		}
-	    
+		Menu.display();
 		C = Menu.getChoice();
 	    }
 	    runGame = false;
